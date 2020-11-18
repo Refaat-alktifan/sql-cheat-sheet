@@ -3,7 +3,7 @@
 create database cheatsheet;
 use cheatsheet;
 
-create table city 
+create table city
 (
     id int primary key,
     name varchar(17),
@@ -12,15 +12,15 @@ create table city
     population int
 );
 
-insert into city values (6, "Rotterdam", "NLD", "Zuid-Holland", 593321);
-insert into city values (3878, "Scottsdale", "USA", "Arizona", 202705);
-insert into city values (3965, "Corona", "USA", "California", 124966);
-insert into city values (3973, "Concord", "USA", "California", 121780);
-insert into city values (3977, "Cedar Rapids", "USA", "Iowa", 120758);
-insert into city values (3982, "Coral Springs", "USA", "Florida", 117549);
-insert into city values (4054, "Fairfield", "USA", "California", 92256);
-insert into city values (4058, "Boulder", "USA", "Colorado", 91238);
-insert into city values (4061, "Fall River", "USA", "Massachusetts", 90555);
+insert into city values (6, "test1", "TST1", "test-test1", 593321);
+insert into city values (1, "test2", "TST2", "test-test2", 202705);
+insert into city values (3, "test3", "TST3", "test-test3", 124966);
+insert into city values (7, "test4", "TST4", "test-test4", 121780);
+insert into city values (8, "test5", "TST5", "test-test5", 120758);
+insert into city values (11, "test6", "TST6", "test-test6", 117549);
+insert into city values (22, "test7", "TST7", "test-test7", 92256);
+insert into city values (34, "test8", "TST8", "test-test8", 91238);
+insert into city values (66, "test9", "TST9", "test-test8", 90555);
 
 -- sum function
 select sum(population) from city group by population;
